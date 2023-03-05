@@ -1,0 +1,38 @@
+.item {
+    display: flex;
+    flex-direction: row;
+
+    padding: 15px 10px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: rgb(203, 239, 250);
+
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+.statusFalse {
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 50%;
+    background-color: red;
+}
+
+.statusTrue {
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 50%;
+    background-color: green;
+}
+
+.avatar {
+    border-radius: 5px;
+}
+
+.name {
+    font-size: large;
+}

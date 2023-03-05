@@ -1,16 +1,18 @@
-import { PropTypes } from 'prop-types'
+import React from 'react';
+import { PropTypes } from 'prop-types';
+import css from './statisticItem.module.css';
 
-const StatisticItem = ({label, perc}) => {
+export const StatisticItem = ({ label, perc }) => {
     return (
-        <li className="item" >
-            <span className="label">{label}</span>
-            <span className="percentage">{perc}&#x25;</span>
+        <li className={css.item} style={{background: `${'#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase()}`}}>
+
+            <span className={css.label}>{label}</span>
+            <span className={css.percentage}>{perc}&#x25;</span>
         </li>);
 }
 
-export default StatisticItem;
-
 StatisticItem.propTypes = {
-    label: PropTypes.string.isRequired, 
+    label: PropTypes.string.isRequired,
     perc: PropTypes.number.isRequired,
 }
+

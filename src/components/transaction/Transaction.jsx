@@ -1,13 +1,14 @@
 import React from 'react'
 import { PropTypes } from 'prop-types'
+import css from './Transaction.module.css'
 
 
 export default function Transaction({ item }) {
     return (
-        <tr>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+        <tr className={css.tableR}>
+            <td className={css.tableD}>{item.type}</td>
+            <td className={css.tableD}>{item.amount}</td>
+            <td className={css.tableD}>{item.currency}</td>
         </tr>
     )
 }

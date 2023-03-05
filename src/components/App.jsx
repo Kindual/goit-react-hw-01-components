@@ -6,22 +6,28 @@ import { Profile } from './profile/profile';
 import { Statistics } from './statistics/statistics';
 import FriendList from './friends/friendList';
 import TransactionHistory from './transactionsHistory/TransactionHistory';
+import css from './App.module.css'
 
 export const App = () => {
   return (<>
-    <Profile
-      username={user.username}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
-    />
+    <div className={css.container}>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
 
-    <Statistics title="Upload stats" stats={data} />
-
-    <FriendList friends={friends} />
-
-    <TransactionHistory items={transactions} />;
+    </div>
+    <div className={css.container}>
+      <Statistics title="Upload stats" stats={data} />
+    </div>
+    <div className={css.container}>
+      <FriendList friends={friends} /></div>
+    <div className={css.container}>
+      <TransactionHistory items={transactions} />;
+    </div>
   </>
   );
 };

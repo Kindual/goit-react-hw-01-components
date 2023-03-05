@@ -1,0 +1,15 @@
+.tableR {
+    background-color: #9b959229;
+    width: 100%;
+    text-align: center;
+}
+
+.tableD {
+    width: 200px;
+    padding: 10px 5px;
+}
+
+.tableR:nth-child(2n+1) {
+    background-color: #fff;
+}
+

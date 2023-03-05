@@ -1,0 +1,17 @@
+.transactionHistory {
+    margin: auto;
+    width: 600px;
+}
+
+.tableHead {
+    width: 100%;
+    background-color: #59adda;
+    color: white;
+    text-transform: uppercase;
+}
+
+.tableH {
+    width: 200px;
+    padding: 10px 5px;
+
+}
