@@ -6,7 +6,7 @@ import css from './statistics.module.css'
 export const Statistics = ({ stats, title }) => {
     return (
         <section className={css.statistics}>
-            <h2 className={css.title}>{title}</h2>
+            {title && <h2 className={css.title}>{title}</h2>}
 
             <ul className={css.statList}>
                 {
@@ -28,5 +28,5 @@ Statistics.propTypes = {
         )
     ),
 
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
 }
